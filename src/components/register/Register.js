@@ -11,13 +11,13 @@ const Register = () => {
                     <input type='text' placeholder='Display Name'/>
                     <input type='email' placeholder='email'/>
                     <input type='password' placeholder='password'/>
-                    <input type='file' id='file' />
+                    <input style={{display:'none'}} type='file' id='file' />
                     <label htmlFor='file'>
                       upload image
                     </label>
                     <button>sign up</button>
                 </form>
-                <p>Yoou already have an account? Login</p>
+                <p>You already have an account? Login</p>
             </div>
         </div>
     </div>
