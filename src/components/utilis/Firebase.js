@@ -1,7 +1,7 @@
 import { initializeApp } from 'firebase/app';
 import {getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword} from 'firebase/auth'
 import {getStorage} from 'firebase/storage'
-import { getFirestore, doc, getDoc, setDoc, collection, writeBatch, query, getDocs} from 'firebase/firestore'
+import { getFirestore, doc, getDoc, setDoc, collection, writeBatch,  query, getDocs} from 'firebase/firestore'
 
 
 const firebaseConfig = {
@@ -14,5 +14,7 @@ const firebaseConfig = {
   };
   
 
-  const app = initializeApp(firebaseConfig);
+  export const app = initializeApp(firebaseConfig);
   export const db = getFirestore();
+  export const auth = getAuth()
+  export const storage = getStorage()
