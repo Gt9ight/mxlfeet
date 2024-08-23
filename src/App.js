@@ -7,7 +7,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/mxlfleet" element={<Login />} />
         <Route path="/thank-you" element={<ThankYou />} />
       </Routes>
     </Router>
