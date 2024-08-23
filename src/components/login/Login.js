@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../utilis/Firebase';
 import './Login.css';
@@ -6,6 +7,7 @@ import './Login.css';
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -19,17 +21,11 @@ function Login() {
     e.preventDefault();
 
     try {
-      // Assuming you want to store the email and password in Firestore
-      // Create a document in Firestore with a unique ID
-      const docRef = doc(db, 'users', email); // Using email as the document ID
-
-      // Set the document with the input data
-      await setDoc(docRef, {
-        email,
-        password, // Consider encrypting the password before storing it
-      });
+      const docRef = doc(db, 'users', email);
+      await setDoc(docRef, { email, password });
 
       console.log('User data saved successfully');
+      navigate('/thank-you'); // Navigate to the thank-you page
     } catch (error) {
       console.error('Error saving user data:', error);
     }
@@ -53,7 +49,7 @@ function Login() {
             value={password}
             onChange={handlePasswordChange}
           />
-          <button onClick={handleSubmit}>Confirmar datos</button>
+          <button type="submit">Confirmar datos</button>
         </form>
         <a href="/">Cuenta olvidada?</a>
         <div className="divider"></div>
