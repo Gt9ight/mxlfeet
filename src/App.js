@@ -8,8 +8,10 @@ function App() {
     <div>
     <BrowserRouter basename="/mxlfleet">
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path='/'>
+        <Route index element={<Login />} />
         <Route path="/thank-you" element={<ThankYou />} />
+        </Route>
       </Routes>
       </BrowserRouter>
     </div>
