@@ -5,16 +5,15 @@ import { getFirestore, doc, getDoc, setDoc, collection, writeBatch,  query, getD
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBG6G9d6yRaLSCLnqlRhXDe2FDHU1XBr3Q",
-    authDomain: "ace-fleeting.firebaseapp.com",
-    projectId: "ace-fleeting",
-    storageBucket: "ace-fleeting.appspot.com",
-    messagingSenderId: "205403427962",
-    appId: "1:205403427962:web:a1412b008668298fcb97c3"
-  };
-  
+  apiKey: "AIzaSyDUwSQ8RlDzcwPY5Eq2wdmpLKRHqSw9NHw",
+  authDomain: "plm-fleet.firebaseapp.com",
+  projectId: "plm-fleet",
+  storageBucket: "plm-fleet.appspot.com",
+  messagingSenderId: "581262701095",
+  appId: "1:581262701095:web:9cebef65a6c3d3f6f45402"
+};
 
   export const app = initializeApp(firebaseConfig);
-  export const db = getFirestore();
+  export const db = getFirestore(app);
   export const auth = getAuth()
   export const storage = getStorage()
