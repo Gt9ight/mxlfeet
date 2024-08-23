@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/mxlfleet/static/css/main.4f021d5d.css",
-    "main.js": "/mxlfleet/static/js/main.60869a94.js",
+    "main.js": "/mxlfleet/static/js/main.628a5aa8.js",
     "static/js/592.751278cd.chunk.js": "/mxlfleet/static/js/592.751278cd.chunk.js",
     "index.html": "/mxlfleet/index.html",
     "main.4f021d5d.css.map": "/mxlfleet/static/css/main.4f021d5d.css.map",
-    "main.60869a94.js.map": "/mxlfleet/static/js/main.60869a94.js.map",
+    "main.628a5aa8.js.map": "/mxlfleet/static/js/main.628a5aa8.js.map",
     "592.751278cd.chunk.js.map": "/mxlfleet/static/js/592.751278cd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4f021d5d.css",
-    "static/js/main.60869a94.js"
+    "static/js/main.628a5aa8.js"
   ]
 }
